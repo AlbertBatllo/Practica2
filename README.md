@@ -1,8 +1,8 @@
-## Practica2: Interrupció per GPIO
+# Practica2: Interrupció per GPIO
 
 En aquesta practica implementarem les interrupcions i veurem quan va be utilitzar-les i quan no
 
-# Codi
+## Codi
 
 ```
 #include <Arduino.h>
@@ -41,7 +41,7 @@ if (millis() - lastMillis > 60000) {
 }
 ```
 
-# Explicació del codi
+## Explicació del codi
 
 Dins l'estructura Button tenim tres variables: numero de pin, numero de pulsacions i booleà que indica si esta sent pulsat:
 
@@ -98,11 +98,11 @@ static uint32_t lastMillis = 0;
 }
 ```
 
-## Practica 2b: Interrupció per Timer
+# Practica 2b: Interrupció per Timer
 
 En aquesta part de la practica les interrupcions seràn controlades per un "timer"
 
-# Codi
+## Codi
 
 ```
 #include <Arduino.h>
@@ -150,7 +150,7 @@ void loop() {
 }
 ```
 
-# Explicació del codi
+## Explicació del codi
 
 En les interrupcions per timer és el propi programa el que interrumpeix amb un contador de temps fixat per nosaltres, en aquest cas sera cada 1 segon, i surtirà per pantalla el nombre d'interrupcions que porta el programa.
 
